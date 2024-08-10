@@ -2,6 +2,7 @@ const carouselInner = document.querySelector('.carousel-inner');
 const items = document.querySelectorAll('.carousel-item');
 const slides = document.querySelectorAll('.slide');
 const video = document.getElementById("my-video")
+const marquee = document.getElementsByClassName("marquee")
 
 
 // Clone the first and last items to create a seamless loop
@@ -104,8 +105,18 @@ showSlide(currentSlide);
 
 // humburger code
 
-
 function toggleMenu() {
-    var navLinks = document.querySelector('.nav-left ul');
-    navLinks.classList.toggle('show');
+    // Toggle the 'show' class on the ul.nav-links to show/hide the menu
+    const menu = document.querySelector('.nav-left ul');
+    menu.classList.toggle('show');
+
+    // Toggle the 'hide' class on all other content
+    const otherContent = document.querySelectorAll('.mid-img, .mid-content, .marquee, .content-3, .title, .carousel-container, .slideshow-container, .testimonial-container, .content-4');
+    otherContent.forEach(item => {
+        item.classList.toggle('hide');
+    });
+
+    const marquee = document.querySelector('.marquee');
+    const spans = marquee.querySelectorAll('span');
+    spans.forEach(span => span.remove());
 }
