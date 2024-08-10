@@ -96,12 +96,12 @@ testimonialSlides.forEach((slide, index) => {
 // Initial setup
 showSlide(currentSlide);
 
-//Restart video when it ends
+// Restart video when it ends
 
-// video.addEventListener('ended', function() {
-//     video.currentTime = 0;
-//     video.play();
-// });
+video.addEventListener('ended', function() {
+    video.currentTime = 0;
+    video.play();
+});
 
 // humburger code
 
