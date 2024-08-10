@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.before-main-nav {
+    display: 'flex';
+    justify-content: center;
+    text-align: center;
+    background-color: #103A3A;
+    color: white;
+    height: 26px;
+    padding-top: 12px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.logo {
+    padding-top: 25px;
+
+}
+
+.logo img {
+    width: 370px;
+}
+
+
+.nav-left {
+    width: 50%;
+    margin-top: 6%;
+    margin-left: 10px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    position: relative;
+}
+
+.nav-left .hamburger {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.nav-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-left ul li {
+    margin-right: 20px;
+}
+
+.nav-left ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav-left ul li a:hover {
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+
+.nav-right {
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+    margin-top: -16px;
+
+}
+
+
+.nav-right i {
+    padding: 9px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.mid-img img {
+    width: 100%;
+
+
+}
+
+.marquee {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* Full width container */
+    overflow: hidden;
+    /* Hide the overflowing text */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    background-color: #F6E84A;
+    height: 45px;
+    padding-top: 23px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.marquee span {
+    animation: marquee 5s linear infinite;
+    /* Apply the animation */
+    padding: 0 10px;
+    /* Space between the text */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+        /* Start off the right side */
+    }
+
+    to {
+        transform: translateX(-100%);
+        /* Move fully off the left side */
+    }
+}
+
+
+.mid-content h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #103A3A;
+}
+
+.mid-content-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 7%;
+}
+
+.mid-content-cards .cards {
+    position: relative;
+    /* Ensure the images stack on top of each other */
+    width: 30%;
+    /* Adjust width to match your image size */
+}
+
+.mid-content-cards .cards img {
+    width: 100%;
+    /* Image takes up the full width of the container */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+    /* Smooth transition */
+}
+
+.mid-content-cards .cards .hover {
+    opacity: 0;
+    /* Hide the hover image initially */
+}
+
+.mid-content-cards .cards:hover .hover {
+    opacity: 1;
+    /* Show the hover image on hover */
+}
+
+.mid-content-cards .cards:hover .org {
+    opacity: 0;
+    /* Hide the original image on hover */
+}
+
+.mid-content-cards .desc {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 99%;
+}
+
+.mid-content-cards .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    /* margin-left: -30%; */
+}
+
+.mid-content-cards .Strikethrough {
+    text-decoration: line-through;
+    margin-right: 15px;
+
+}
+
+.content-3 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-3 .button button {
+    height: 60px;
+    width: 260px;
+    border-radius: 5px;
+    background-color: #103a3a;
+    color: white;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.content-3 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #103a3a;
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 25%;
+    /* Adjust to show multiple images */
+    margin-right: 10px;
+    /* Space between items */
+    cursor: pointer;
+    /* Makes items clickable */
+}
+
+.carousel-item img {
+    width: 100%;
+    /* Ensure images fill the container */
+    display: block;
+}
+
+.carousel-inner p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 4%;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #103A3A;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 100vh;
+    /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* Smooth fade transition */
+    z-index: 1;
+}
+
+.slide.show {
+    opacity: 1;
+    z-index: 2;
+    /* Ensure the active slide is on top */
+}
+
+.slide img {
+    width: 75vw;
+    /* Adjusted to take half of the viewport width */
+    height: 90%;
+    /* Ensure it fills the container's height */
+    object-fit: cover;
+    /* Cover the area without distortion */
+    transition: opacity 1s ease-in-out;
+    /* Smooth image transition */
+}
+
+.slide .text {
+    width: 50vw;
+    /* Adjusted to take the other half of the viewport width */
+    display: flex;
+    flex-direction: column;
+    /* Stack the h3 and p vertically */
+    justify-content: flex-start;
+    /* Align content to the top */
+    padding: 40px;
+    /* Add padding for spacing */
+    text-align: left;
+    font-size: 1.5rem;
+    /* Adjust text size as needed */
+    background-color: #F6F6F0;
+    height: 81%;
+}
+
+.slide .text h3 {
+    margin-top: 6%;
+    padding-bottom: 20px;
+    font-size: 2.4rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #103A3A;
+
+}
+
+.slide .text p {
+    margin-top: 5%;
+    font-size: 1.1rem;
+    line-height: 2.1;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.testimonial-container {
+    width: 80%;
+    height: 70vh;
+    /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0 10%;
+    /* Adjust padding to show half of the next testimonial */
+    background-color: #103a3a;
+    margin-top: -4%;
+}
+
+.heading h2 {
+    width: 54%;
+    color: white;
+    margin-top: -20%;
+    margin-left: 35%;
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+
+}
+
+.testimonial-slide {
+    width: 50%;
+    /* Adjust width for the testimonial */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    /* Smooth transition */
+    z-index: 1;
+    cursor: pointer;
+    /* Add cursor pointer to indicate that it's clickable */
+    margin-top: 10%;
+}
+
+.testimonial-slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    /* Bring the active slide into view */
+    z-index: 2;
+
+}
+
+.testimonial-slide.next {
+    opacity: 0.5;
+    transform: translateX(30%);
+    /* Partially show the next testimonial */
+    z-index: 1;
+}
+
+.testimonial-text {
+    margin-top: 3%;
+    margin-left: 46%;
+    height: 167px;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color: #f4f4f4;
+    /* color: white; */
+    border-radius: 8px;
+    padding: 56px 41px;
+    line-height: 2.6;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.content-4 .background-video video {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.content-4 .text-area {
+    width: 100%;
+    height: 30vh;
+    background-color: #F5F5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-4 .text-area .head-text {
+    margin-top: 0%;
+}
+
+.content-4 .text-area .head-text h2 {
+    margin-top: 0%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: #103A3A;
+}
+
+
+.content-4 .text-area .head-text p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 2.2;
+}
+
+.content-4 .text-area .head-text a {
+    color: #21B259;
+    font-size: 20px;
+}
+
+.content-4 .yellow-back-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #F6E84A;
+
+}
+
+.content-4 .yellow-back-text h2 {
+    margin-top: 2%;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+
+}
+
+.content-4 .shop-btn {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+
+
+
+.content-4 .shop-btn button {
+    width: 160px;
+    height: 56px;
+    border-radius: 3px;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content-4 .shop-btn button:hover {
+    background-color: #f6f6f0;
+}
+
+
+
+/* Responsive Code */
+
+@media (max-width: 768px) {
+    .nav-left {
+        width: 100%;
+        /* Full width on small screens */
+        height: auto;
+        /* Adjust height */
+        position: relative;
+        /* Relative positioning for better control */
+    }
+
+    .nav-left ul {
+        display: none;
+        /* Hide links initially */
+        flex-direction: column;
+        width: 100%;
+        background-color: #f8f8f8;
+        /* Match navbar background */
+        position: absolute;
+        top: 50px;
+        /* Adjust based on the height of the hamburger icon */
+        left: -10px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        /* Optional shadow */
+    }
+
+    .nav-left .hamburger {
+        display: block;
+        /* Show hamburger on small screens */
+    }
+
+    .nav-left ul.show {
+        display: flex;
+        /* Show menu when toggled */
+    }
+
+    .nav-left ul li {
+        margin-bottom: 0;
+        /* Remove margin between items */
+        border-bottom: 1px solid #ccc;
+        /* Border between items */
+    }
+
+    .nav-left ul li:last-child {
+        border-bottom: none;
+        /* Remove border from last item */
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .before-main-nav {
+
+        padding-top: 12px;
+        font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 10px;
+    }
+
+    .logo {
+        padding-top: 30px;
+        margin-left: -15%;
+
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .nav-right {
+        display: flex;
+        justify-content: right;
+        margin-right: 1%;
+        margin-top: -23px;
+
+    }
+
+
+    .nav-right i {
+        padding: 6px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .marquee {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 15px;
+        /* Full width container */
+        overflow: hidden;
+        /* Hide the overflowing text */
+        white-space: nowrap;
+        /* Prevent text from wrapping */
+        background-color: #F6E84A;
+        padding-top: 20px;
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    .marquee span {
+        animation: marquee 5s linear infinite;
+        /* Apply the animation */
+        padding: 0 10px;
+        margin-top: -10px;
+        font-size: 12px;
+    }
+
+    .mid-content h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+
+
+
+    .mid-content-cards {
+        display: flex;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mid-content-cards .cards {
+        position: relative;
+        /* Ensure the images stack on top of each other */
+        width: 100%;
+        /* Adjust width to match your image size */
+    }
+
+    .content-3 .button button {
+        height: 50px;
+        width: 160px;
+        font-size: 12px;
+        margin-top: 4%;
+    }
+
+    .content-3 .title {
+
+        font-size: 15px;
+        margin-top: 12%;
+        margin-bottom: 10%;
+
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        /* Adjust as needed */
+        margin: 5px;
+        overflow: hidden;
+        margin-top: 5%;
+    }
+
+    .carousel {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+        min-width: 40%;
+        /* Adjust to show multiple images */
+        margin-right: 10px;
+        /* Space between items */
+        cursor: pointer;
+        /* Makes items clickable */
+    }
+
+    .carousel-item img {
+        width: 100%;
+        /* Ensure images fill the container */
+        display: block;
+    }
+
+
+    .carousel-inner p {
+
+        margin-top: 4%;
+        font-size: 15px;
+
+    }
+
+
+    .slideshow-container {
+        width: 100%;
+        height: 100vh;
+        /* Full height of the viewport */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 5%;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        /* Smooth fade transition */
+        z-index: 1;
+    }
+
+    .slide.show {
+        opacity: 1;
+        z-index: 2;
+        /* Ensure the active slide is on top */
+    }
+
+    .slide img {
+        width: 100%;
+        /* Adjusted to take half of the viewport width */
+        height: 50%;
+        /* Ensure it fills the container's height */
+        object-fit: cover;
+        /* Cover the area without distortion */
+        transition: opacity 1s ease-in-out;
+        /* Smooth image transition */
+    }
+
+    .slide .text {
+        width: 100%;
+        padding: 40px;
+        text-align: left;
+        font-size: 1.5rem;
+        margin-top: 96%;
+        margin-left: -100%;
+    }
+
+    .slide .text h3 {
+        margin-top: -22%;
+        padding-bottom: 20px;
+        font-size: 1rem;
+        font-weight: 800;
+
+
+    }
+
+    .slide .text p {
+        margin-top: -7%;
+        font-size: 13px;
+        line-height: 1.4;
+        font-weight: 400;
+    }
+
+    .testimonial-container {
+        width: 100%;
+        height: 110vh;
+        /* Adjust height as needed */
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        padding: 0 0%;
+        /* Adjust padding to show half of the next testimonial */
+        background-color: #103a3a;
+        margin-top: 5%;
+    }
+
+    .heading h2 {
+        width: 100%;
+        color: white;
+        margin-top: -90%;
+        margin-left: 0%;
+        font-size: 1.3rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: white;
+
+    }
+
+    .testimonial-slide {
+        width: 100%;
+        cursor: pointer;
+        margin-top: 48%;
+        margin-left: -50%;
+    }
+
+    .testimonial-slide.active {
+        opacity: 1;
+        transform: translateX(0);
+        /* Bring the active slide into view */
+        z-index: 2;
+
+    }
+
+    .testimonial-slide.next {
+        opacity: 0.5;
+        transform: translateX(30%);
+        /* Partially show the next testimonial */
+        z-index: 1;
+    }
+
+    .testimonial-text {
+        margin-top: -4%;
+        margin-left: 46%;
+        height: 70vh;
+        width: 80%;
+        font-size: 15px;
+        border-radius: 8px;
+        padding: 17px 22px;
+        line-height: 1.8;
+        font-weight: 400;
+    }
+
+
+    .content-4 .background-video video {
+        width: 100%;
+        height: 60vh;
+        object-fit: fill;
+        margin-top: 1%;
+    }
+
+    .content-4 .text-area {
+        width: 100%;
+        height: 80vh;
+        
+    }
+
+    .content-4 .text-area .head-text {
+        margin-top: 260%;
+    }
+
+    .content-4 .text-area .head-text h2 {
+        margin-top: -200%;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 22px;
+        color: #103A3A;
+    }
+
+
+    .content-4 .text-area .head-text p {
+        margin-top: 4%;
+        margin-bottom: 7%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    
+
+    .content-4 .yellow-back-text {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
+        background-color: #F6E84A;
+    
+    }
+    
+    .content-4 .yellow-back-text h2 {
+        margin-top: -4%;
+        font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+    
+    }
+    
+    .content-4 .shop-btn {
+        display: flex;
+        justify-content: right;
+        text-align: right;
+        margin-right: 25%;
+        margin-top: 15%;
+    }
+    
+    
+    
+    .content-4 .shop-btn button {
+        width: 110px;
+        height: 40px;
+    }
+    
+    
+
+}
