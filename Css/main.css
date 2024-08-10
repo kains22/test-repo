@@ -599,8 +599,8 @@
 
 }
 
-
 @media (max-width: 480px) {
+
     .before-main-nav {
 
         padding-top: 12px;
@@ -665,8 +665,6 @@
         font-size: 1.8rem;
 
     }
-
-
 
 
     .mid-content-cards {
@@ -741,218 +739,6 @@
     }
 
 
-    .slideshow-container {
-        width: 100%;
-        height: 100vh;
-        /* Full height of the viewport */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        margin-top: 5%;
-    }
-
-    .slide {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        /* Smooth fade transition */
-        z-index: 1;
-    }
-
-    .slide.show {
-        opacity: 1;
-        z-index: 2;
-        /* Ensure the active slide is on top */
-    }
-
-    .slide img {
-        width: 100%;
-        /* Adjusted to take half of the viewport width */
-        height: 50%;
-        /* Ensure it fills the container's height */
-        object-fit: cover;
-        /* Cover the area without distortion */
-        transition: opacity 1s ease-in-out;
-        /* Smooth image transition */
-    }
-
-    .slide .text {
-        width: 100%;
-        padding: 40px;
-        text-align: left;
-        font-size: 1.5rem;
-        margin-top: 96%;
-        margin-left: -100%;
-    }
-
-    .slide .text h3 {
-        margin-top: -22%;
-        padding-bottom: 20px;
-        font-size: 1rem;
-        font-weight: 800;
-
-
-    }
-
-    .slide .text p {
-        margin-top: -7%;
-        font-size: 13px;
-        line-height: 1.4;
-        font-weight: 400;
-    }
-
-    .testimonial-container {
-        width: 100%;
-        height: 110vh;
-        /* Adjust height as needed */
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-        padding: 0 0%;
-        /* Adjust padding to show half of the next testimonial */
-        background-color: #103a3a;
-        margin-top: 5%;
-    }
-
-    .heading h2 {
-        width: 100%;
-        color: white;
-        margin-top: -90%;
-        margin-left: 0%;
-        font-size: 1.3rem;
-        font-family: "Roboto", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        color: white;
-
-    }
-
-    .testimonial-slide {
-        width: 100%;
-        cursor: pointer;
-        margin-top: 48%;
-        margin-left: -50%;
-    }
-
-    .testimonial-slide.active {
-        opacity: 1;
-        transform: translateX(0);
-        /* Bring the active slide into view */
-        z-index: 2;
-
-    }
-
-    .testimonial-slide.next {
-        opacity: 0.5;
-        transform: translateX(30%);
-        /* Partially show the next testimonial */
-        z-index: 1;
-    }
-
-    .testimonial-text {
-        margin-top: -4%;
-        margin-left: 46%;
-        height: 70vh;
-        width: 80%;
-        font-size: 15px;
-        border-radius: 8px;
-        padding: 17px 22px;
-        line-height: 1.8;
-        font-weight: 400;
-    }
-
-
-    .content-4 .background-video video {
-        width: 100%;
-        height: 30vh;
-        object-fit: fill;
-        margin-top: 1%;
-    }
-
-    .content-4 .text-area {
-        width: 100%;
-        height: 80vh;
-
-    }
-
-    .content-4 .text-area .head-text {
-        margin-top: 260%;
-    }
-
-    .content-4 .text-area .head-text h2 {
-        margin-top: -200%;
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 22px;
-        color: #103A3A;
-    }
-
-
-    .content-4 .text-area .head-text p {
-        margin-top: 4%;
-        margin-bottom: 7%;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 12px;
-        line-height: 1.6;
-    }
-
-
-
-    .content-4 .yellow-back-text {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        height: 30vh;
-        background-color: #F6E84A;
-
-    }
-
-    .content-4 .yellow-back-text h2 {
-        margin-top: -4%;
-        font-family: "Work Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        font-size: 15px;
-
-    }
-
-    .content-4 .shop-btn {
-        display: flex;
-        justify-content: right;
-        text-align: right;
-        margin-right: 25%;
-        margin-top: 15%;
-    }
-
-
-
-    .content-4 .shop-btn button {
-        width: 110px;
-        height: 40px;
-    }
-
-
-
-}
-
-
-
-@media (max-width: 480px) {
-    
     .slideshow-container {
         width: 100%;
         height: 100vh;
@@ -1092,16 +878,16 @@
 
     .content-4 .text-area {
         width: 100%;
-        height: 35vh;
+        height: 65vh;
 
     }
 
     .content-4 .text-area .head-text {
-        margin-top: 350%;
+        margin-top: 150%;
     }
 
     .content-4 .text-area .head-text h2 {
-        margin-top: -200%;
+        margin-top: -100%;
         font-family: "Ubuntu", sans-serif;
         font-weight: 700;
         font-style: normal;
@@ -1121,16 +907,14 @@
     }
 
 
-
     .content-4 .yellow-back-text {
         display: flex;
         text-align: center;
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        height: 20vh;
+        height: 30vh;
         background-color: #F6E84A;
-        margin-bottom: 10px;
 
     }
 
@@ -1157,5 +941,10 @@
     .content-4 .shop-btn button {
         width: 110px;
         height: 40px;
+        
+        
     }
-  }
+
+
+
+}
